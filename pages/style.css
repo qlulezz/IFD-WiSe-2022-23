@@ -149,3 +149,9 @@ main {
 .links .square {
     padding: 0 1.3rem;
 }
+
+.links .disabled {
+    background-color: #ccc;
+    color: #eee;
+    pointer-events: none;
+}
