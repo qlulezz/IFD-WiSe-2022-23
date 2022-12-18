@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Pressable } from 'react-native';
 import Logo from "../assets/LOGO.svg";
 
-function HomeScreen({ navigation }) {
+function StartScreen({ navigation }) {
   function getStarted() {
     console.log("Get Started!!!");
   }
@@ -63,4 +63,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen;
+export default StartScreen;
