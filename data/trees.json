@@ -28,7 +28,7 @@
       },
       {
         "title": "img",
-        "data": "weisstanne_zweige"
+        "data": "weißtanne_zweige"
       },
       {
         "title": "Weißtannenholz",
@@ -36,7 +36,7 @@
       },
       {
         "title": "img",
-        "data": "weisstanne_holz"
+        "data": "weißtanne_holz"
       }
     ]
   },
@@ -358,7 +358,7 @@
   {
     "title": "Esche",
     "scientific": "Fraxinus excelsior",
-    "preview": "n Auenwäldern und in feuchten Bachtälern ist die Esche eine häufige Baumart. Sie prägt wertvolle, oft bedrohte Lebensräume, ist aber auch für die Forstwirtschaft wichtig. In Laubmischwäldern wächst sie schnell; ihr zähes und biegsames Holz wird sehr geschätzt.",
+    "preview": "In Außenwäldern und in feuchten Bachtälern ist die Esche eine häufige Baumart. Sie prägt wertvolle, oft bedrohte Lebensräume, ist aber auch für die Forstwirtschaft wichtig. In Laubmischwäldern wächst sie schnell; ihr zähes und biegsames Holz wird sehr geschätzt.",
     "characteristics": [
       {
         "title": "Familie",

@@ -70,7 +70,8 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		backgroundColor: '#121212',
-		padding: 30,
+		paddingHorizontal: 20,
+		paddingVertical: 40,
 	},
 	header: {
 		marginBottom: 10,
@@ -115,7 +116,7 @@ const styles = StyleSheet.create({
 	boxImageContainer: {
 		flex: 1,
 		height: '100%',
-		marginRight: 10,
+		marginRight: 30,
 		paddingBottom: 10,
 	},
 	boximage: {
@@ -123,11 +124,12 @@ const styles = StyleSheet.create({
 		height: '100%',
 		width: "100%",
 		resizeMode: 'cover',
+		borderRadius: 10,
 	},
 	textimage: {
 		width: '100%',
-		height: 170,
-		resizeMode: 'contain',
+		height: 190,
+		resizeMode: 'cover',
 		borderRadius: 10,
 	},
 });

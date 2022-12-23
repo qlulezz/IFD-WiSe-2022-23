@@ -42,7 +42,7 @@ export default function HomeScreen({ navigation }) {
 					</View>
 					<View style={[styles.tilerow, styles.rowshift]}>
 						<TilePlus />
-						<Tile setDialog={setDialog} type={'Vogelbeere'} />
+						<Tile setDialog={setDialog} type={'Fichte'} />
 						<Tile setDialog={setDialog} type={'Birke'} />
 						<Tile setDialog={setDialog} type={'Douglasie'} />
 						<TilePlus />
