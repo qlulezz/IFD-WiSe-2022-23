@@ -15,7 +15,7 @@ export default function HomeScreen({ navigation }) {
 	return (
 		<View style={styles.container}>
 			<StatusBar style="light" />
-			<Header level={4} xp={273} />
+			<Header level={4} xp={273} nav={navigation}/>
 			<View style={styles.wald}>
 				<ReactNativeZoomableView
 					maxZoom={3}

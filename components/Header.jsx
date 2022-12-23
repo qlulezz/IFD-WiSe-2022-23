@@ -1,9 +1,31 @@
-import { Dimensions, StyleSheet, View, Text } from 'react-native';
+import { Dimensions, StyleSheet, View, Text, Pressable } from 'react-native';
 import Logo from '../assets/LOGO.svg';
 import GearIcon from '../assets/icons/gear.svg';
 
-const { width } = Dimensions.get('window');
+export default function Header({ level, xp, nav }) {
+	return (
+		<>
+			<View style={styles.header}>
+				<Logo width={50} height={50} fill={'#fff'} />
+				<Pressable onPress={() => nav.navigate('Settings')}>
+					<GearIcon width={35} height={35} fill={'#fff'} />
+				</Pressable>
+			</View>
+			<View style={styles.info}>
+				<View style={styles.box}>
+					<Text style={styles.h1}>Dein Wald</Text>
+					<View style={styles.innerbox}>
+						<Text style={styles.h3}>{xp} XP</Text>
+						<Text style={styles.h2}>Level {level}</Text>
+					</View>
+				</View>
+				<View style={styles.bar}></View>
+			</View>
+		</>
+	);
+}
 
+const { width } = Dimensions.get('window');
 const styles = StyleSheet.create({
 	box: {
 		width: width - 60,
@@ -59,24 +81,3 @@ const styles = StyleSheet.create({
 		backgroundColor: '#fff',
 	},
 });
-
-export default function Header({ level, xp }) {
-	return (
-		<>
-			<View style={styles.header}>
-				<Logo width={50} height={50} fill={'#fff'} />
-				<GearIcon width={35} height={35} fill={'#fff'} />
-			</View>
-			<View style={styles.info}>
-				<View style={styles.box}>
-					<Text style={styles.h1}>Dein Wald</Text>
-					<View style={styles.innerbox}>
-						<Text style={styles.h3}>{xp} XP</Text>
-						<Text style={styles.h2}>Level {level}</Text>
-					</View>
-				</View>
-				<View style={styles.bar}></View>
-			</View>
-		</>
-	);
-}
