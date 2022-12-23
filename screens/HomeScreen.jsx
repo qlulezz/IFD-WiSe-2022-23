@@ -43,14 +43,14 @@ export default function HomeScreen({ navigation }) {
 					<View style={[styles.tilerow, styles.rowshift]}>
 						<TilePlus />
 						<Tile setDialog={setDialog} type={'Vogelbeere'} />
-						<Tile setDialog={setDialog} type={'Rotbuche'} />
-						<Tile setDialog={setDialog} type={'Rotbuche'} />
+						<Tile setDialog={setDialog} type={'Birke'} />
+						<Tile setDialog={setDialog} type={'Douglasie'} />
 						<TilePlus />
 					</View>
 					<View style={[styles.tilerow, styles.rowshift]}>
 						<TilePlus />
-						<Tile setDialog={setDialog} type={'Rotbuche'} />
-						<Tile setDialog={setDialog} type={'Rotbuche'} />
+						<Tile setDialog={setDialog} type={'Esche'} />
+						<Tile setDialog={setDialog} type={'Waldkiefer'} />
 						<TilePlus />
 					</View>
 					<View style={[styles.tilerow, styles.rowshift]}>
