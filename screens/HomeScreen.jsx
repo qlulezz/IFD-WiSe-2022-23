@@ -1,13 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { Dimensions, StyleSheet, Text, View, Pressable, TextInput } from 'react-native';
 import { ReactNativeZoomableView } from '@openspacelabs/react-native-zoomable-view';
+import { useState } from 'react';
 
 import Tile from '../components/Tile';
 import TilePlus from '../components/TilePlus';
+import Dialog from '../components/Dialog';
 import Header from '../components/Header';
 import MapIcon from '../assets/icons/map-location-dot.svg';
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {
+	const [dialog, setDialog] = useState('');
+
 	return (
 		<View style={styles.container}>
 			<StatusBar style="light" />
@@ -31,22 +35,22 @@ export default function HomeScreen() {
 					</View>
 					<View style={[styles.tilerow]}>
 						<TilePlus />
-						<Tile />
-						<Tile />
-						<Tile />
+						<Tile setDialog={setDialog} type={'Bergahorn'} />
+						<Tile setDialog={setDialog} type={'Rotbuche'} />
+						<Tile setDialog={setDialog} type={'Weißtanne'} />
 						<TilePlus />
 					</View>
 					<View style={[styles.tilerow, styles.rowshift]}>
 						<TilePlus />
-						<Tile />
-						<Tile />
-						<Tile />
+						<Tile setDialog={setDialog} type={'Vogelbeere'} />
+						<Tile setDialog={setDialog} type={'Rotbuche'} />
+						<Tile setDialog={setDialog} type={'Rotbuche'} />
 						<TilePlus />
 					</View>
 					<View style={[styles.tilerow, styles.rowshift]}>
 						<TilePlus />
-						<Tile />
-						<Tile />
+						<Tile setDialog={setDialog} type={'Rotbuche'} />
+						<Tile setDialog={setDialog} type={'Rotbuche'} />
 						<TilePlus />
 					</View>
 					<View style={[styles.tilerow, styles.rowshift]}>
@@ -60,6 +64,7 @@ export default function HomeScreen() {
 				<MapIcon style={styles.mapicon} width={50} height={50} fill={'#fff'} />
 				<View style={styles.mapbackground}></View>
 			</Pressable>
+			{dialog && <Dialog navigation={navigation} type={dialog} setDialog={setDialog} />}
 		</View>
 	);
 }

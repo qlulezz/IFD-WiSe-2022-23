@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
 	},
 	bar: {
 		width: width - 60,
-		height: 6,
+		height: 5,
 		borderRadius: 20,
 		backgroundColor: '#fff',
 	},
