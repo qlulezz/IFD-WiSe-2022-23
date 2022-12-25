@@ -15,7 +15,7 @@ export default function HomeScreen({ navigation }) {
 	return (
 		<View style={styles.container}>
 			<StatusBar style="light" />
-			<Header level={4} xp={273} nav={navigation}/>
+			<Header level={4} xp={273} nav={navigation} />
 			<View style={styles.wald}>
 				<ReactNativeZoomableView
 					maxZoom={3}
@@ -60,7 +60,7 @@ export default function HomeScreen({ navigation }) {
 					</View>
 				</ReactNativeZoomableView>
 			</View>
-			<Pressable style={styles.map}>
+			<Pressable style={styles.map} onPress={() => navigation.navigate('Map')}>
 				<MapIcon style={styles.mapicon} width={50} height={50} fill={'#fff'} />
 				<View style={styles.mapbackground}></View>
 			</Pressable>
