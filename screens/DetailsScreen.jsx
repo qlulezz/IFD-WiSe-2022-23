@@ -4,7 +4,7 @@ import {
 	Text,
 	View,
 	ScrollView,
-	Pressable,
+	TouchableOpacity,
 	TextInput,
 	Image,
 } from 'react-native';
@@ -22,9 +22,9 @@ export default function DetailsScreen({ navigation, route }) {
 				<Text style={[styles.text, styles.h1]}>
 					{info.title} ({info.scientific})
 				</Text>
-				<Pressable onPress={() => navigation.navigate('Home')}>
+				<TouchableOpacity onPress={() => navigation.navigate('Home')}>
 					<CloseIcon width="35" height="35" fill="#fff" />
-				</Pressable>
+				</TouchableOpacity>
 			</View>
 			<View style={styles.box}>
 				<View style={styles.boxImageContainer}>

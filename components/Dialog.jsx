@@ -1,4 +1,4 @@
-import { StyleSheet, View, Text, Pressable, Dimensions } from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity, Dimensions } from 'react-native';
 import { useState } from 'react';
 import CloseIcon from '../assets/icons/xmark.svg';
 import InfoIcon from '../assets/icons/circle-info.svg';
@@ -8,16 +8,16 @@ function click(navigation, type) {
 	navigation.navigate('Details', { type });
 }
 
-export default function Dialog({ navigation, type, setDialog }) {
+export default function Dialog({ navigation, type, setDialog, setLevelDialog }) {
 	const [info] = useState(trees.find((t) => t.title === type));
 
 	return (
 		<View style={styles.dialog}>
 			<View style={styles.header}>
 				<Text style={styles.h1}>{type}</Text>
-				<Pressable onPress={() => setDialog("")}>
+				<TouchableOpacity onPress={() => setDialog("")}>
 					<CloseIcon width="30" height="30" fill="#fff" />
-				</Pressable>
+				</TouchableOpacity>
 			</View>
 			<View style={styles.header}>
 				<Text style={styles.h2}>Level 8</Text>
@@ -25,14 +25,14 @@ export default function Dialog({ navigation, type, setDialog }) {
 			</View>
 			<View style={styles.bar}></View>
 			<View style={styles.header}>
-				<Pressable /* onPress={() => click(navigation, type)} */>
+				<TouchableOpacity onPress={() => setLevelDialog(true)}>
 					<View style={styles.btn}>
 						<Text style={styles.btnText}>Leveln</Text>
 					</View>
-				</Pressable>
-				<Pressable onPress={() => click(navigation, type)}>
+				</TouchableOpacity>
+				<TouchableOpacity onPress={() => click(navigation, type)}>
 					<InfoIcon width="40" height="40" fill="#FFD70C" />
-				</Pressable>
+				</TouchableOpacity>
 			</View>
 			<View>
 				<Text style={styles.preview}>{info.preview}</Text>

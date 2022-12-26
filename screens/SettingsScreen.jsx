@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Dimensions, Pressable } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, TouchableOpacity } from 'react-native';
 import Logo from '../assets/LOGO.svg';
 import CloseIcon from '../assets/icons/xmark.svg';
 
@@ -9,9 +9,9 @@ function SettingsScreen({ navigation }) {
 			<StatusBar style="light" />
 			<View style={styles.header}>
 				<Logo width={50} height={50} fill={'#fff'} />
-				<Pressable onPress={() => navigation.navigate('Home')}>
+				<TouchableOpacity onPress={() => navigation.navigate('Home')}>
 					<CloseIcon width={35} height={35} fill={'#fff'} />
-				</Pressable>
+				</TouchableOpacity>
 			</View>
 			<View style={styles.textContainer}>
 				<Text style={styles.h1}>Einstellungen</Text>

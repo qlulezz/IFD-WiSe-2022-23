@@ -1,4 +1,4 @@
-import { StyleSheet, Pressable, View } from 'react-native';
+import { StyleSheet, TouchableOpacity, View } from 'react-native';
 import TileGraphic from '../assets/vector/Tile.svg';
 
 import Bergahorn from '../assets/vector/trees/Bergahorn.svg';
@@ -26,16 +26,18 @@ const styles = StyleSheet.create({
 
 export default function Tile({ setDialog, type }) {
 	return (
-		<Pressable onPress={() => setDialog(type)}>
-			<TileGraphic style={styles.tile} />
-			{[0, 1, 2, 3].map((i) => {
-				return (
-					<View style={styles.tree} key={i}>
-						{getTree(type)}
-					</View>
-				);
-			})}
-		</Pressable>
+		<TouchableOpacity onPress={() => setDialog(type)}>
+			<>
+				<TileGraphic style={styles.tile} />
+				{[0, 1, 2, 3].map((i) => {
+					return (
+						<View style={styles.tree} key={i}>
+							{getTree(type)}
+						</View>
+					);
+				})}
+			</>
+		</TouchableOpacity>
 	);
 }
 

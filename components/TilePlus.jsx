@@ -1,4 +1,4 @@
-import { StyleSheet, Text } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 import TileGraphic from '../assets/vector/TilePlus.svg';
 
 const styles = StyleSheet.create({
@@ -12,8 +12,8 @@ const styles = StyleSheet.create({
 
 export default function TilePlus() {
 	return (
-		<>
+		<TouchableOpacity>
 			<TileGraphic style={styles.tile}/>
-		</>
+		</TouchableOpacity>
 	);
 }

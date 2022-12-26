@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Pressable } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import Logo from "../assets/LOGO.svg";
 
 function StartScreen({ navigation }) {
@@ -13,12 +13,12 @@ function StartScreen({ navigation }) {
       <Logo width={300} height={300} fill={"#fff"} />
       <Text style={[styles.text, styles.h1]}>Explorester</Text>
       <View style={styles.btnContainer}>
-        <Pressable onPress={() => navigation.navigate("Login")} >
+        <TouchableOpacity onPress={() => navigation.navigate("Login")} >
           <Text style={[styles.text, styles.btn]}>Registrieren</Text>
-        </Pressable>
-        <Pressable onPress={getStarted} >
+        </TouchableOpacity>
+        <TouchableOpacity onPress={getStarted} >
           <Text style={[styles.text, styles.btn, styles.btnSecondary]}>Anmelden</Text>
-        </Pressable>
+        </TouchableOpacity>
       </View>
       <Text style={styles.text}>Interface Design - Wintersemester 2022/23</Text>
     </View >

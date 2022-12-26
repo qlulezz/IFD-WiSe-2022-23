@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Dimensions, Pressable } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, TouchableOpacity } from 'react-native';
 import Logo from '../assets/LOGO.svg';
 import CloseIcon from '../assets/icons/xmark.svg';
 import CameraIcon from '../assets/icons/camera.svg';
@@ -21,13 +21,13 @@ function MapScreen({ navigation }) {
 						longitudeDelta: 0.015,
 					}}
 				/>
-				<Pressable style={styles.close} onPress={() => navigation.navigate('Home')}>
+				<TouchableOpacity style={styles.close} onPress={() => navigation.navigate('Home')}>
 					<CloseIcon width={35} height={35} fill={'#000'} />
-				</Pressable>
-				<Pressable style={styles.camera} onPress={() => navigation.navigate('Home')}>
+				</TouchableOpacity>
+				<TouchableOpacity style={styles.camera} onPress={() => navigation.navigate('Home')}>
 					<CameraIcon width={35} height={35} fill={'#fff'} />
 					<View style={styles.mapbackground}></View>
-				</Pressable>
+				</TouchableOpacity>
 			</View>
 		</View>
 	);

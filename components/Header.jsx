@@ -1,4 +1,4 @@
-import { Dimensions, StyleSheet, View, Text, Pressable } from 'react-native';
+import { Dimensions, StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import Logo from '../assets/LOGO.svg';
 import GearIcon from '../assets/icons/gear.svg';
 
@@ -7,9 +7,9 @@ export default function Header({ level, xp, nav }) {
 		<>
 			<View style={styles.header}>
 				<Logo width={50} height={50} fill={'#fff'} />
-				<Pressable onPress={() => nav.navigate('Settings')}>
+				<TouchableOpacity onPress={() => nav.navigate('Settings')}>
 					<GearIcon width={35} height={35} fill={'#fff'} />
-				</Pressable>
+				</TouchableOpacity>
 			</View>
 			<View style={styles.info}>
 				<View style={styles.box}>

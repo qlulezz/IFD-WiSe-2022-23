@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Pressable, TextInput } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, TextInput } from 'react-native';
 import Logo from '../assets/LOGO.svg';
 import { useState } from 'react';
 
@@ -49,9 +49,9 @@ export default function RegisterScreen({ navigation }) {
 					Cookie-Nutzung zu. Explorester kann deine Kontaktinformationen, einschl. deiner
 					E-Mail-Adresse, für Zwecke nutzen, die in unseren Datenschutzrichtlinien beschrieben sind.
 				</Text>
-				<Pressable onPress={register}>
+				<TouchableOpacity onPress={register}>
 					<Text style={[styles.text, styles.btn]}>Registrieren</Text>
-				</Pressable>
+				</TouchableOpacity>
 			</View>
 		</View>
 	);
