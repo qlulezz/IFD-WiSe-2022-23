@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "explorester-app",
+    "name": "Explorester",
     "slug": "explorester-app",
     "owner": "qlulezz",
     "version": "1.0.0",
@@ -25,10 +25,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.qlulezz.explorester"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ae6c41a3-23ad-4350-ad89-45da66235316"
+      }
     }
   }
 }
