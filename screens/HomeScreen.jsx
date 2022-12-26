@@ -1,16 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
-import { Dimensions, StyleSheet, Text, View, Pressable, TextInput } from 'react-native';
+import { Dimensions, StyleSheet, Text, View, TouchableOpacity, TextInput } from 'react-native';
 import { ReactNativeZoomableView } from '@openspacelabs/react-native-zoomable-view';
 import { useState } from 'react';
 
 import Tile from '../components/Tile';
 import TilePlus from '../components/TilePlus';
 import Dialog from '../components/Dialog';
+import LevelDialog from '../components/LevelDialog';
 import Header from '../components/Header';
 import MapIcon from '../assets/icons/map-location-dot.svg';
 
 export default function HomeScreen({ navigation }) {
 	const [dialog, setDialog] = useState('');
+	const [levelDialog, setLevelDialog] = useState(false);
 
 	return (
 		<View style={styles.container}>
@@ -60,11 +62,26 @@ export default function HomeScreen({ navigation }) {
 					</View>
 				</ReactNativeZoomableView>
 			</View>
-			<Pressable style={styles.map} onPress={() => navigation.navigate('Map')}>
+			<TouchableOpacity style={styles.map} onPress={() => navigation.navigate('Map')}>
 				<MapIcon style={styles.mapicon} width={50} height={50} fill={'#fff'} />
 				<View style={styles.mapbackground}></View>
-			</Pressable>
-			{dialog && <Dialog navigation={navigation} type={dialog} setDialog={setDialog} />}
+			</TouchableOpacity>
+			{dialog &&
+				(levelDialog ? (
+					<LevelDialog
+						navigation={navigation}
+						type={dialog}
+						setDialog={setDialog}
+						setLevelDialog={setLevelDialog}
+					/>
+				) : (
+					<Dialog
+						navigation={navigation}
+						type={dialog}
+						setDialog={setDialog}
+						setLevelDialog={setLevelDialog}
+					/>
+				))}
 		</View>
 	);
 }
