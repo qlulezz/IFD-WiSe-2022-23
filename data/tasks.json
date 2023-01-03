@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Verbissschutz",
+    "description": "Einer der bedeutendsten Arten der Schädigung im Wald sind die Verbissschäden durch zum Beispiel Rehe oder Hasen. Verbissschäden bezeichnen dabei das Abbeißen von Knospen, Blättern oder Zweigen. Durch das Anbringen eines Verbissschutzes kann das verhindert werden.",
+    "gameslug": "Ziehe den Verbissschutz auf den Ast",
+    "gamedesc": "Ziehe den Verbissschutz auf die Äste.",
+    "xp": 420
+  },
+  {
+    "name": "Fegeschutz",
+    "description": "Fegeschäden entstehen durch das Fegen des Geweihs eines Wildtieres an einem Baum. Sie reiben so die noch am Geweih befindliche Basthaut, eine während des Geweihwachstums entstandene Haut, ab. Das Anbringen eines Fegeschutzes kann dies verhindern.",
+    "gameslug": "Stülpe Schutz über junge Bäume",
+    "gamedesc": "Stülpe den Verbissschutz über die jungen Bäume.",
+    "xp": 378
+  },
+  {
+    "name": "Wertästung",
+    "description": "Um qualitativ hochwertiges Holz zu erlangen, ist bei einigen Baumarten eine Wertästung notwendig. Bei Baumarten, die sich schlecht natürlich reinigen (zum Beispiel Nadelbäume), also ihre Totäste nur schlecht abwerfen, werden im jungen Alter im Stammbereich die Äste entfernt, um ein Einwachsen zu verhindern. Dieser Fall nennt sich Trockenastung. Außerdem gibt es die Grünästung, bei der lebende grüne Äste spezifisch abgesägt werden.",
+    "gameslug": "Säge tote Äste",
+    "gamedesc": "Säge alle toten Äste vom Nadelbaum ab. Vorsicht: Nicht die gesunden Äste absägen!",
+    "xp": 356
+  },
+  {
+    "name": "Jungbestandspflege",
+    "description": "Durch die Jungbestandspflege kann die Baumartenzusammensetzung in dichten, geschlossenen Waldbeständen junger Bäume (Dickungen) gesteuert werden. Ziel ist dabei eine den klimatischen Änderungen angepasste Baumartenmischung. Mit Jungbestandspflege werden stabile, vitale und hochwertige Bestände auf praxistaugliche Weise erzogen. Ohne oder mit falscher Bestandspflege können konkurrenzschwächere Baumarten für immer verloren gehen. Andere Baumarten bauen ihre Dominanz weiter aus.",
+    "gameslug": "",
+    "gamedesc": "",
+    "xp": 322
+  },
+  {
+    "name": "Jungdurchforstung",
+    "description": "Die Durchforstung ist eine Maßnahme zur Waldpflege. Hier werden in der Regel schwache und fehlgewachsene oder auch schon schlagreife Bäume aus einem Baumbestand entnommen. Jungdurchforstungen sind Eingriffe in Bestände, die jünger sind als die halbe Umtriebszeit (Zeit zwischen Pflanzung/Verjüngung und Fällen des Baums).",
+    "gameslug": "Entferne schlagreife Bäume",
+    "gamedesc": "Entferne die schlagreifen Bäume, indem du auf die dunklen Quadrate tippst. Vorsicht: Nicht die gesunden Bäume entfernen!",
+    "xp": 298
+  },
+  {
+    "name": "Altdurchforstung",
+    "description": "Die Durchforstung ist eine Maßnahme zur Waldpflege. Hier werden in der Regel schwache und fehlgewachsene oder auch schon schlagreife Bäume aus einem Baumbestand entnommen. Altdurchforstungen sind Maßnahmen bei Beständen, die älter sind als die halbe Umtriebszeit (Zeit zwischen Pflanzung/Verjüngung und Fällen des Baums).",
+    "gameslug": "Entferne tote Bäume",
+    "gamedesc": "Entferne die toten Bäume, indem du auf die dunklen Quadrate tippst. Vorsicht: Nicht die gesunden Bäume entfernen!",
+    "xp": 268
+  },
+  {
+    "name": "Verjüngung",
+    "description": "Naturverjüngung meint die Reproduktion eines Baumes bzw. Bestandes. Heute wird die Verjüngung meist natürlich, ohne besondere forstwirtschaftliche Maßnahmen, durchgeführt. Befinden sich Bäume im hiebsreifen Stadium und haben eine entsprechend große Krone, so können diese gefällt werden. So entstehen je nach Baumart bis zu 30 m große Lücken. Die dabei notwendigen Lichtverhältnisse sind dabei jeweils von der entsprechenden Baumart abhängig. In diesen Lücken können dann neue Bäume natürlich wachsen oder aktiv gepflanzt werden.",
+    "gameslug": "",
+    "gamedesc": "",
+    "xp": 232
+  }
+]

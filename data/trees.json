@@ -38,6 +38,11 @@
         "title": "img",
         "data": "weißtanne_holz"
       }
+    ],
+    "tasks": [
+      "Verbissschutz",
+      "Fegeschutz",
+      "Wertästung"
     ]
   },
   {
@@ -83,6 +88,12 @@
         "title": "img",
         "data": "rotbuche_holz"
       }
+    ],
+    "tasks": [
+      "Verbissschutz",
+      "Fegeschutz",
+      "Jungdurchforstung",
+      "Altdurchforstung"
     ]
   },
   {
@@ -128,7 +139,8 @@
         "title": "img",
         "data": "fichte_holz"
       }
-    ]
+    ],
+    "tasks": []
   },
   {
     "title": "Douglasie",
@@ -173,6 +185,11 @@
         "title": "img",
         "data": "douglasie_holz"
       }
+    ],
+    "tasks": [
+      "Verbissschutz",
+      "Fegeschutz",
+      "Wertästung"
     ]
   },
   {
@@ -218,6 +235,10 @@
         "title": "img",
         "data": "waldkiefer_holz"
       }
+    ],
+    "tasks": [
+      "Jungdurchforstung",
+      "Altdurchforstung"
     ]
   },
   {
@@ -263,6 +284,12 @@
         "title": "img",
         "data": "laerche_holz"
       }
+    ],
+    "tasks": [
+      "Jungbestandspflege",
+      "Jungdurchforstung",
+      "Altdurchforstung",
+      "Verjüngung"
     ]
   },
   {
@@ -308,6 +335,11 @@
         "title": "img",
         "data": "bergahorn_holz"
       }
+    ],
+    "tasks": [
+      "Jungbestandspflege",
+      "Jungdurchforstung",
+      "Altdurchforstung"
     ]
   },
   {
@@ -353,6 +385,11 @@
         "title": "img",
         "data": "spitzahorn_holz"
       }
+    ],
+    "tasks": [
+      "Jungbestandspflege",
+      "Jungdurchforstung",
+      "Altdurchforstung"
     ]
   },
   {
@@ -398,6 +435,12 @@
         "title": "img",
         "data": "esche_holz"
       }
+    ],
+    "tasks": [
+      "Jungbestandspflege",
+      "Jungdurchforstung",
+      "Altdurchforstung",
+      "Verjüngung"
     ]
   },
   {

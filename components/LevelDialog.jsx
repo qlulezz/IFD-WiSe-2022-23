@@ -27,8 +27,13 @@ export default function LevelDialog({ navigation, type, setDialog, setLevelDialo
 			<View style={styles.aufgabencontainer}>
 				<Text style={styles.h2}>Aufgaben</Text>
 				<View style={styles.aufgaben}>
-					<Task />
-					<Task />
+					{info.tasks ? (
+						info.tasks.map((task) => {
+							return <Task key={task} task={task} navigation={navigation} />;
+						})
+					) : (
+						<View></View>
+					)}
 				</View>
 			</View>
 		</View>
