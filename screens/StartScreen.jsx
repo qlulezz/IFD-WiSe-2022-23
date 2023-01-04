@@ -3,10 +3,6 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import Logo from "../assets/LOGO.svg";
 
 function StartScreen({ navigation }) {
-  function getStarted() {
-    console.log("Get Started!!!");
-  }
-
   return (
     <View style={styles.container}>
       <StatusBar style="light" />
@@ -16,7 +12,7 @@ function StartScreen({ navigation }) {
         <TouchableOpacity onPress={() => navigation.navigate("Login")} >
           <Text style={[styles.text, styles.btn]}>Registrieren</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={getStarted} >
+        <TouchableOpacity onPress={() => navigation.navigate("Login")} >
           <Text style={[styles.text, styles.btn, styles.btnSecondary]}>Anmelden</Text>
         </TouchableOpacity>
       </View>

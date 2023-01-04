@@ -10,9 +10,9 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default function TilePlus() {
+export default function TilePlus({ nav }) {
 	return (
-		<TouchableOpacity>
+		<TouchableOpacity onPress={() => nav.navigate('Inventory')}>
 			<TileGraphic style={styles.tile}/>
 		</TouchableOpacity>
 	);

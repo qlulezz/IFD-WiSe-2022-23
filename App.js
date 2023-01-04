@@ -9,6 +9,7 @@ import DetailsScreen from "./screens/DetailsScreen";
 import SettingsScreen from "./screens/SettingsScreen";
 import MapScreen from "./screens/MapScreen";
 import TaskScreen from "./screens/TaskScreen";
+import InventoryScreen from "./screens/InventoryScreen";
 
 import Jungdurchforstung from "./screens/games/Jungdurchforstung";
 
@@ -28,6 +29,7 @@ function App() {
         <Stack.Screen name="Settings" component={SettingsScreen} />
         <Stack.Screen name="Map" component={MapScreen} />
         <Stack.Screen name="Task" component={TaskScreen} />
+        <Stack.Screen name="Inventory" component={InventoryScreen} />
         <Stack.Screen name="Jungdurchforstung" component={Jungdurchforstung} />
       </Stack.Navigator>
     </NavigationContainer>

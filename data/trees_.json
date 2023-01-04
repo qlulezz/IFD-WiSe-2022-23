@@ -487,5 +487,46 @@
         "data": "birke_holz"
       }
     ]
+  },
+  {
+    "title": "Vogelbeere",
+    "scientific": "Sorbus aucuparia",
+    "preview": "Es ist der Baum der vielen Namen – am bekanntesten ist neben Vogelbeere oder Vogelbeerbaum die Bezeichnung „Eberesche“. Doch die Menschen nennen sie auch Drosselbeere, Quitsche, Krametsbeere, Vogelbär, Blumenesche, Ebschbeere, Zwergesche, Eibschen, Queckbeere, Quitsbeere, Kronawetterbeere, Quitschbeere oder Queckenboom.",
+    "characteristics": [
+      {
+        "title": "Familie",
+        "data": "Rosengewächse"
+      },
+      {
+        "title": "Lebensdauer",
+        "data": "bis 80 Jahre"
+      },
+      {
+        "title": "Größe",
+        "data": "15 bis 25 Meter"
+      },
+      {
+        "title": "Stammdicke",
+        "data": "0,4 bis 0,6 Meter"
+      }
+    ],
+    "text": [
+      {
+        "title": "",
+        "data": "Es ist der Baum der vielen Namen – am bekanntesten ist neben Vogelbeere oder Vogelbeerbaum die Bezeichnung „Eberesche“. Doch die Menschen nennen sie auch Drosselbeere, Quitsche, Krametsbeere, Vogelbär, Blumenesche, Ebschbeere, Zwergesche, Eibschen, Queckbeere, Quitsbeere, Kronawetterbeere, Quitschbeere oder Queckenboom. Die anspruchslose und robuste Vogelbeere kommt in ganz Europa praktisch auf jedem Untergrund vor. Sie ist eine Pionierpflanze und gedeiht auf Böden mit den verschiedensten Eigenschaften, ebenso in Laub- wie Nadelwäldern, auf Moorböden und trockenen Steinhängen. Sie steigt im Gebirge bis zu 2400 Meter an die Baumgrenze auf. In Norwegen kommt sie sogar an der Eismeerküste vor."
+      },
+      {
+        "title": "",
+        "data": "Ihre rund 20 Zentimeter langen und acht bis zehn Zentimeter breiten Blätter sind gefiedert und setzen sich aus neun bis 19 gezahnten Blättchen an einem Stiel zusammen. Eine Besonderheit der Eberesche ist, dass die Rinde ihrer Zweige Chlorophyll enthält. So kann der Baum Photosynthese betreiben, bevor im Frühjahr das Laub wächst. Das begünstigt sein Überleben in kälteren Regionen."
+      },
+      {
+        "title": "",
+        "data": "Schon mit fünf bis sechs Jahren kann die Vogelbeere blühen, die Blütezeit ist von Mai bis Juli. Die kleinen weißen Blüten bilden Rispen mit 200 bis 300 Einzelblüten, die allerdings nicht besonders gut riechen. Der „Duft“ lockt vor allem Käfer und Fliegen, aber auch Bienen zur Bestäubung an. Auffällig sind im Herbst ihre knallroten, bis einen Zentimeter großen Beeren, die winzigen Äpfeln gleichen und auch im botanischen Sinne als Apfelfrüchte gelten. Sie hängen in dichten Trauben an den Zweigen. Wie schon der Name sagt, sind sie eine wichtige Nahrungsquelle für über 60 Arten an Vögeln, darunter Singdrossel, Rotkehlchen, Dompfaff, Rotdrossel, Seidenschwanz oder Grünspecht. Doch nicht nur Vögel ernähren sich von den Beeren. Über 30 Säugetier- und über 70 Insektenarten fressen sie, darunter Rotwild, Füchse oder Dachse, ebenso wie Kleinschmetterlinge und Rüsselkäfer."
+      },
+      {
+        "title": "Vogelbeerenholz",
+        "data": "Bei uns hat die Verwendung des Holzes des Vogelbeerbaums an Bedeutung verloren. Handwerker wie Wagner, Drechsler und Schnitzer schätzen die Härte und die Schwere, aber auch die Elastizität und die Zähigkeit dieser mit einem hellbraunen Kern versehenen Holzart. Die schöne Holzstruktur, gekennzeichnet durch scharf ausgeprägte Spätholzlinien, kommt bei kleineren Möbelstücken wie auch bei Spazierstöcken zur Geltung."
+      }
+    ]
   }
 ]

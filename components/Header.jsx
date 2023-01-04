@@ -6,7 +6,9 @@ export default function Header({ level, xp, nav }) {
 	return (
 		<>
 			<View style={styles.header}>
-				<Logo width={50} height={50} fill={'#fff'} />
+				<TouchableOpacity onPress={() => nav.navigate('Inventory')}>
+					<Logo width={50} height={50} fill={'#fff'} />
+				</TouchableOpacity>
 				<TouchableOpacity onPress={() => nav.navigate('Settings')}>
 					<GearIcon width={35} height={35} fill={'#fff'} />
 				</TouchableOpacity>

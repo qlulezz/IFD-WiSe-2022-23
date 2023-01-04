@@ -30,35 +30,35 @@ export default function HomeScreen({ navigation }) {
 					style={styles.tilecontainer}
 				>
 					<View style={[styles.tilerow]}>
-						<TilePlus />
-						<TilePlus />
-						<TilePlus />
-						<TilePlus />
+						<TilePlus nav={navigation} />
+						<TilePlus nav={navigation} />
+						<TilePlus nav={navigation} />
+						<TilePlus nav={navigation} />
 					</View>
 					<View style={[styles.tilerow]}>
-						<TilePlus />
+						<TilePlus nav={navigation} />
 						<Tile setDialog={setDialog} type={'Bergahorn'} />
 						<Tile setDialog={setDialog} type={'Rotbuche'} />
 						<Tile setDialog={setDialog} type={'Weißtanne'} />
-						<TilePlus />
+						<TilePlus nav={navigation} />
 					</View>
 					<View style={[styles.tilerow, styles.rowshift]}>
-						<TilePlus />
+						<TilePlus nav={navigation} />
 						<Tile setDialog={setDialog} type={'Fichte'} />
 						<Tile setDialog={setDialog} type={'Birke'} />
 						<Tile setDialog={setDialog} type={'Douglasie'} />
-						<TilePlus />
+						<TilePlus nav={navigation} />
 					</View>
 					<View style={[styles.tilerow, styles.rowshift]}>
-						<TilePlus />
+						<TilePlus nav={navigation} />
 						<Tile setDialog={setDialog} type={'Esche'} />
 						<Tile setDialog={setDialog} type={'Waldkiefer'} />
-						<TilePlus />
+						<TilePlus nav={navigation} />
 					</View>
 					<View style={[styles.tilerow, styles.rowshift]}>
-						<TilePlus />
-						<TilePlus />
-						<TilePlus />
+						<TilePlus nav={navigation} />
+						<TilePlus nav={navigation} />
+						<TilePlus nav={navigation} />
 					</View>
 				</ReactNativeZoomableView>
 			</View>
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
 		backgroundColor: '#121212',
 		alignItems: 'center',
 		justifyContent: 'center',
-		padding: 30,
+		paddingHorizontal: 30,
 	},
 	wald: {
 		flex: 1,
