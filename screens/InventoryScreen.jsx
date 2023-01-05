@@ -54,10 +54,10 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		backgroundColor: '#121212',
-		paddingHorizontal: 20,
 		paddingTop: 40,
 	},
 	header: {
+		paddingHorizontal: 20,
 		marginBottom: 10,
 	},
 	box: {

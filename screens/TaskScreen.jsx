@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { useState } from 'react';
 import CloseIcon from '../assets/icons/xmark.svg';
 import XPIcon from '../assets/icons/angles-up.svg';
+import StartIcon from '../assets/icons/arrow-right.svg';
 import tasks from '../data/tasks.json';
 
 function TaskScreen({ navigation, route }) {
@@ -35,8 +36,9 @@ function TaskScreen({ navigation, route }) {
 				</View>
 			</View>
 			<View style={styles.btncontainer}>
-				<TouchableOpacity onPress={() => navigation.navigate(type)}>
-					<Text style={[styles.btn]}>Aufgabe starten</Text>
+				<TouchableOpacity onPress={() => navigation.navigate(type)} style={[styles.btn]}>
+					<Text style={styles.btntext}>Aufgabe starten</Text>
+					<StartIcon width="25" height="25" fill="#000" />
 				</TouchableOpacity>
 			</View>
 		</>
@@ -81,17 +83,24 @@ const styles = StyleSheet.create({
 		flex: 1,
 		backgroundColor: '#121212',
 		justifyContent: 'flex-end',
+		alignItems: "center",
 		paddingBottom: 50,
 	},
 	btn: {
 		backgroundColor: '#FFD70C',
 		borderRadius: 50,
-		marginHorizontal: 80,
 		paddingVertical: 5,
-		fontSize: 20,
-		fontWeight: 'bold',
+		paddingHorizontal: 15,
 		textAlign: 'center',
+		flexDirection: "row",
+		alignItems: "center",
+		justifyContent: 'space-between',
 		marginBottom: 10,
+	},
+	btntext: {
+		fontSize: 22,
+		fontWeight: 'bold',
+		marginRight: 10,
 	},
 });
 

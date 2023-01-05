@@ -16,6 +16,18 @@ import Jungdurchforstung from "./screens/games/Jungdurchforstung";
 const Stack = createNativeStackNavigator();
 
 function App() {
+  const config = {
+    animation: 'spring',
+    config: {
+      stiffness: 1000,
+      damping: 500,
+      mass: 3,
+      overshootClamping: true,
+      restDisplacementThreshold: 0.01,
+      restSpeedThreshold: 0.01,
+    },
+  };
+
   return (
     <NavigationContainer>
       <Stack.Navigator
@@ -25,11 +37,11 @@ function App() {
         <Stack.Screen name="Start" component={StartScreen} />
         <Stack.Screen name="Login" component={RegisterScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="Details" component={DetailsScreen} options={{ animation: "slide_from_bottom" }} />
         <Stack.Screen name="Settings" component={SettingsScreen} />
-        <Stack.Screen name="Map" component={MapScreen} />
-        <Stack.Screen name="Task" component={TaskScreen} />
-        <Stack.Screen name="Inventory" component={InventoryScreen} />
+        <Stack.Screen name="Map" component={MapScreen} options={{ animation: "slide_from_bottom" }} />
+        <Stack.Screen name="Task" component={TaskScreen} options={{ animation: "slide_from_bottom" }} />
+        <Stack.Screen name="Inventory" component={InventoryScreen} options={{ animation: "slide_from_bottom" }} />
         <Stack.Screen name="Jungdurchforstung" component={Jungdurchforstung} />
       </Stack.Navigator>
     </NavigationContainer>

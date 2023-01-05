@@ -1,34 +1,80 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Pressable, ToastAndroid } from 'react-native';
 import { useState } from 'react';
-import { FlatGrid } from 'react-native-super-grid';
-import CloseIcon from '../../assets/icons/xmark.svg';
+import BackIcon from '../../assets/icons/arrow-left.svg';
 import tasks from '../../data/tasks.json';
 
 const type = 'Jungdurchforstung';
+let count = 0;
 
 function Jungdurchforstung({ navigation }) {
 	const [info] = useState(tasks.find((t) => t.name === type));
 
+	count = 0;
 	return (
 		<View style={styles.container}>
 			<StatusBar style="light" />
 			<View style={[styles.box, styles.header]}>
-				<Text style={[styles.text, styles.h1]}>{type}</Text>
-				<TouchableOpacity onPress={() => navigation.navigate('Home')}>
-					<CloseIcon width="35" height="35" fill="#fff" />
+				<TouchableOpacity onPress={() => navigation.navigate('Task', { type })}>
+					<BackIcon width="35" height="35" fill="#fff" />
 				</TouchableOpacity>
 			</View>
-			<FlatGrid
-				itemDimension={25}
-				data={Array.apply(null, Array(99)).map(function () {})}
-				renderItem={({ item }) => {
-          const r = Math.random() < 0.6 ? { backgroundColor: '#393226' } : { backgroundColor: '#2C8B29' };
-					return <View style={[styles.square, r]} />;
-				}}
-			/>
+			<View style={styles.game}>
+				{Array.apply(null, Array(15)).map((_, i) => {
+					return (
+						<View style={styles.row} key={i}>
+							{Array.apply(null, Array(8)).map((_, j) => {
+								return (
+									<View key={j}>
+										<Square nav={navigation} xp={info.xp} />
+									</View>
+								);
+							})}
+						</View>
+					);
+				})}
+			</View>
 		</View>
 	);
+}
+
+function Square({ nav, xp }) {
+	const [opacity, setOpacity] = useState(1);
+	const r = Math.random();
+
+	if (r < 0.3) {
+		if (opacity === 1) {
+			count++;
+		}
+		return (
+			<Pressable
+				onPress={() => {
+					setOpacity(0);
+					checkCount(nav, xp);
+				}}
+				disabled={!opacity}
+				style={[styles.square, { backgroundColor: '#393226', opacity: opacity }]}
+			></Pressable>
+		);
+	}
+	return (
+		<TouchableOpacity
+			onPress={() => {
+				ToastAndroid.show('Versuch es noch einmal!', ToastAndroid.SHORT);
+				nav.navigate('Task', { type });
+			}}
+			disabled={!opacity}
+			style={[styles.square, { backgroundColor: '#2C8B29', opacity: opacity }]}
+		></TouchableOpacity>
+	);
+}
+
+function checkCount(nav, xp) {
+	count--;
+	if (count === 0) {
+		ToastAndroid.show(`Du hast ${xp} XP erhalten!`, ToastAndroid.SHORT);
+		nav.navigate('Home');
+	}
 }
 
 const styles = StyleSheet.create({
@@ -53,12 +99,21 @@ const styles = StyleSheet.create({
 		fontSize: 24,
 		fontWeight: 'bold',
 	},
-	game: {},
+	game: {
+		alignItems: 'center',
+		justifyContent: 'center',
+		height: '100%',
+	},
+	row: {
+		flexDirection: 'row',
+		marginBottom: 5,
+	},
 	square: {
 		width: 35,
 		height: 35,
-		backgroundColor: '#ff00ff',
+		backgroundColor: '#ff0000',
 		borderRadius: 10,
+		marginRight: 5,
 	},
 });
 
