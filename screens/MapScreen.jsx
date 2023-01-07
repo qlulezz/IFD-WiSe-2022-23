@@ -24,7 +24,7 @@ function MapScreen({ navigation }) {
 				<TouchableOpacity style={styles.close} onPress={() => navigation.navigate('Home')}>
 					<CloseIcon width={35} height={35} fill={'#000'} />
 				</TouchableOpacity>
-				<TouchableOpacity style={styles.camera} onPress={() => navigation.navigate('Home')}>
+				<TouchableOpacity style={styles.camera} onPress={() => navigation.navigate('Scanner')}>
 					<CameraIcon width={35} height={35} fill={'#fff'} />
 					<View style={styles.mapbackground}></View>
 				</TouchableOpacity>

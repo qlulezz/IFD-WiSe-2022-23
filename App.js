@@ -10,6 +10,7 @@ import SettingsScreen from "./screens/SettingsScreen";
 import MapScreen from "./screens/MapScreen";
 import TaskScreen from "./screens/TaskScreen";
 import InventoryScreen from "./screens/InventoryScreen";
+import ScannerScreen from "./screens/ScannerScreen";
 
 import Jungdurchforstung from "./screens/games/Jungdurchforstung";
 
@@ -42,6 +43,7 @@ function App() {
         <Stack.Screen name="Map" component={MapScreen} options={{ animation: "slide_from_bottom" }} />
         <Stack.Screen name="Task" component={TaskScreen} options={{ animation: "slide_from_bottom" }} />
         <Stack.Screen name="Inventory" component={InventoryScreen} options={{ animation: "slide_from_bottom" }} />
+        <Stack.Screen name="Scanner" component={ScannerScreen} options={{ animation: "slide_from_bottom" }} />
         <Stack.Screen name="Jungdurchforstung" component={Jungdurchforstung} />
       </Stack.Navigator>
     </NavigationContainer>
