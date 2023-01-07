@@ -13,6 +13,7 @@ import InventoryScreen from "./screens/InventoryScreen";
 import ScannerScreen from "./screens/ScannerScreen";
 
 import Jungdurchforstung from "./screens/games/Jungdurchforstung";
+import Altdurchforstung from "./screens/games/Altdurchforstung";
 
 const Stack = createNativeStackNavigator();
 
@@ -45,6 +46,7 @@ function App() {
         <Stack.Screen name="Inventory" component={InventoryScreen} options={{ animation: "slide_from_bottom" }} />
         <Stack.Screen name="Scanner" component={ScannerScreen} options={{ animation: "slide_from_bottom" }} />
         <Stack.Screen name="Jungdurchforstung" component={Jungdurchforstung} />
+        <Stack.Screen name="Altdurchforstung" component={Altdurchforstung} />
       </Stack.Navigator>
     </NavigationContainer>
   );

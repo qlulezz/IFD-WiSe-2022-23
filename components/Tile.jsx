@@ -29,7 +29,7 @@ export default function Tile({ setDialog, type }) {
 		<TouchableOpacity onPress={() => setDialog(type)}>
 			<>
 				<TileGraphic style={styles.tile} />
-				{[0, 1, 2, 3].map((i) => {
+				{[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => {
 					return (
 						<View style={styles.tree} key={i}>
 							{getTree(type)}
@@ -44,7 +44,7 @@ export default function Tile({ setDialog, type }) {
 function getTree(type) {
 	let r = {
 		left: random(20, 200),
-		top: random(0, 20),
+		top: random(-30, 25),
 	};
 
 	switch (type) {
